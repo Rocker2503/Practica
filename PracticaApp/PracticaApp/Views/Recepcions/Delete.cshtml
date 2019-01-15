@@ -1,0 +1,45 @@
+﻿@model PracticaApp.Models.Recepcion
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Eliminar Recepcion</h2>
+
+<h3>¿Esta seguro que desea eliminar la recepcion? </h3>
+<div>
+    <h4>Recepcion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumLote)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumLote)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveedor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Proveedor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RutProveedor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RutProveedor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoFruta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PesoFruta)
+        </dd>
+    </dl>
+    
+    <form asp-action="Eliminar">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Volver a las Recepciones</a>
+    </form>
+</div>

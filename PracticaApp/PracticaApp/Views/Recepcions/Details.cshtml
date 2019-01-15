@@ -1,0 +1,42 @@
+﻿@model PracticaApp.Models.Recepcion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Recepcion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumLote)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumLote)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveedor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Proveedor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RutProveedor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RutProveedor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoFruta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PesoFruta)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Volver a las Recepciones</a>
+</div>

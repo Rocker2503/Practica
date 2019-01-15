@@ -1,0 +1,11 @@
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\bin\Debug\netcoreapp2.0\PracticaApp.deps.json
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\bin\Debug\netcoreapp2.0\PracticaApp.runtimeconfig.json
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\bin\Debug\netcoreapp2.0\PracticaApp.runtimeconfig.dev.json
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\bin\Debug\netcoreapp2.0\PracticaApp.dll
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\obj\Debug\netcoreapp2.0\PracticaApp.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\obj\Debug\netcoreapp2.0\PracticaApp.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\obj\Debug\netcoreapp2.0\PracticaApp.AssemblyInfoInputs.cache
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\obj\Debug\netcoreapp2.0\PracticaApp.AssemblyInfo.cs
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\bin\Debug\netcoreapp2.0\PracticaApp.pdb
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\obj\Debug\netcoreapp2.0\PracticaApp.dll
+C:\Users\Nicolas\Documents\Practica\PracticaApp\PracticaApp\obj\Debug\netcoreapp2.0\PracticaApp.pdb

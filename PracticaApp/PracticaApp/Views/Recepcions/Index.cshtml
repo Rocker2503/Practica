@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PracticaApp.Models.Recepcion>
+
+@{
+    ViewData["Title"] = "Recepciones";
+}
+
+<h2>Recepciones</h2>
+
+<p>
+    <button>
+        <a asp-action="Create">Agregar Recepcion</a>
+    </button>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumLote)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Proveedor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RutProveedor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PesoFruta)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumLote)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Proveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RutProveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PesoFruta)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,48 @@
+﻿@model PracticaApp.Models.Recepcion
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Crear</h2>
+
+<h4>Recepcion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NumLote" class="control-label"></label>
+                <input asp-for="NumLote" class="form-control" />
+                <span asp-validation-for="NumLote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Proveedor" class="control-label"></label>
+                <input asp-for="Proveedor" class="form-control" />
+                <span asp-validation-for="Proveedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RutProveedor" class="control-label"></label>
+                <input asp-for="RutProveedor" class="form-control" />
+                <span asp-validation-for="RutProveedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PesoFruta" class="control-label"></label>
+                <input asp-for="PesoFruta" class="form-control" />
+                <span asp-validation-for="PesoFruta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a las Recepciones</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
